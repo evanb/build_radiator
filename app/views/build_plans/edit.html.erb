@@ -1,0 +1,20 @@
+<h1>Editing build_plan</h1>
+
+<% form_for(@build_plan) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @build_plan %> |
+<%= link_to 'Back', build_plans_path %>
