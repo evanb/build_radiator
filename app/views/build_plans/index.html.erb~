@@ -3,14 +3,14 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>RSS Url</th>
+    <th>Url</th>
     <th>Status</th>
   </tr>
 
 <% for build_plan in @build_plans %>
   <tr>
     <td><%=h build_plan.name %></td>
-    <td><%=h build_plan.rss_url %></td>
+    <td><%=h build_plan.url %></td>
     <td><%=h build_plan.status %></td>
     <td><%= link_to 'Show', build_plan %></td>
     <td><%= link_to 'Edit', edit_build_plan_path(build_plan) %></td>

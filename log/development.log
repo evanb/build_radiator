@@ -1086,3 +1086,3037 @@ c2h7AAY6CkB1c2VkewA=--c387c7762c74bcce98dafe99c0b430a6ba94e7e4
 Rendering template within layouts/build_plans
 Rendering build_plans/index
 Completed in 0.02174 (45 reqs/sec) | Rendering: 0.00748 (34%) | DB: 0.00109 (5%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mSQL (0.000942)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000345)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBuildPlans (20080820095608)
+  [4;36;1mSQL (0.000216)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddStatusToBuildPlans (20080823123629)
+  [4;35;1mSQL (0.000213)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.029663)[0m   [0mALTER TABLE "build_plans" ADD "status" varchar(255)[0m
+  [4;36;1mSQL (0.006429)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.004039)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080823123629')[0m
+  [4;36;1mSQL (0.001344)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000330)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000089)[0m   [0;1mPRAGMA index_list("build_plans")[0m
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-23 22:37:24) [GET]
+  Session ID: 6c84e6ac43a587ae48e7c2841f6c927c
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.01797 (55 reqs/sec) | Rendering: 0.01505 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 22:37:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--04a7b3dc8ca3c17679f0f2f19f0b749f4c8bbe0c
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001096)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02857 (35 reqs/sec) | Rendering: 0.01950 (68%) | DB: 0.00110 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 22:37:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000380)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01549 (64 reqs/sec) | Rendering: 0.00635 (41%) | DB: 0.00038 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 22:44:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000668)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01264 (79 reqs/sec) | Rendering: 0.00409 (32%) | DB: 0.00067 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 22:44:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000378)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01635 (61 reqs/sec) | Rendering: 0.00690 (42%) | DB: 0.00038 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-23 22:44:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000361)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01389 (71 reqs/sec) | Rendering: 0.00306 (22%) | DB: 0.00036 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 22:45:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001151)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02273 (43 reqs/sec) | Rendering: 0.00763 (33%) | DB: 0.00115 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 22:45:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000687)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01352 (73 reqs/sec) | Rendering: 0.00417 (30%) | DB: 0.00069 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 22:45:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000646)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.02436 (41 reqs/sec) | Rendering: 0.00838 (34%) | DB: 0.00065 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 22:45:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000668)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01197 (83 reqs/sec) | Rendering: 0.00406 (33%) | DB: 0.00067 (5%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mSQL (0.000938)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mBuildPlan Load (0.000808)[0m   [0mSELECT * FROM "build_plans" [0m
+  [4;36;1mBuildPlan Load (0.000769)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.001038)[0m   [0mUPDATE "build_plans" SET "status" = '--- :green
+', "updated_at" = '2008-08-23 12:46:57' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-23 22:47:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001462)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.09714 (10 reqs/sec) | Rendering: 0.00231 (2%) | DB: 0.00146 (1%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 22:47:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000688)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01274 (78 reqs/sec) | Rendering: 0.00426 (33%) | DB: 0.00069 (5%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Load (0.000782)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 23:07:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000373)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01323 (75 reqs/sec) | Rendering: 0.00396 (29%) | DB: 0.00037 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 23:07:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000358)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01314 (76 reqs/sec) | Rendering: 0.00395 (30%) | DB: 0.00036 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:07:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000707)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01436 (69 reqs/sec) | Rendering: 0.00498 (34%) | DB: 0.00071 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-23 23:07:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000359)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01302 (76 reqs/sec) | Rendering: 0.00214 (16%) | DB: 0.00036 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:07:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000663)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01366 (73 reqs/sec) | Rendering: 0.00437 (32%) | DB: 0.00066 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 23:07:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000703)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01493 (66 reqs/sec) | Rendering: 0.00422 (28%) | DB: 0.00070 (4%) | 200 OK [http://localhost/build_plans/1/edit]
+  [4;35;1mBuildPlan Update (0.000468)[0m   [0mUPDATE "build_plans" SET "status" = 'green', "updated_at" = '2008-08-23 13:11:09' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:11:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000692)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01278 (78 reqs/sec) | Rendering: 0.00419 (32%) | DB: 0.00069 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:12:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001218)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02323 (43 reqs/sec) | Rendering: 0.00755 (32%) | DB: 0.00122 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-23 23:12:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000450)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01357 (73 reqs/sec) | Rendering: 0.00401 (29%) | DB: 0.00045 (3%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:12:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000699)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01316 (76 reqs/sec) | Rendering: 0.00409 (31%) | DB: 0.00070 (5%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Update (0.000449)[0m   [0;1mUPDATE "build_plans" SET "status" = 'foo', "updated_at" = '2008-08-23 13:12:36' WHERE "id" = 1[0m
+  [4;36;1mBuildPlan Load (0.000961)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-23 23:13:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000358)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01178 (84 reqs/sec) | Rendering: 0.00215 (18%) | DB: 0.00036 (3%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:13:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000688)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01313 (76 reqs/sec) | Rendering: 0.00422 (32%) | DB: 0.00069 (5%) | 200 OK [http://localhost/build_plans]
+  [4;35;1mBuildPlan Update (0.000630)[0m   [0mUPDATE "build_plans" SET "status" = 'green', "updated_at" = '2008-08-23 13:13:38' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-23 23:13:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000696)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01289 (77 reqs/sec) | Rendering: 0.00430 (33%) | DB: 0.00070 (5%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Load (0.000369)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;35;1mBuildPlan Update (0.001656)[0m   [0mUPDATE "build_plans" SET "status" = 'red', "updated_at" = '2008-08-24 05:17:55' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 15:18:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000973)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01821 (54 reqs/sec) | Rendering: 0.00464 (25%) | DB: 0.00097 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 15:18:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000359)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01403 (71 reqs/sec) | Rendering: 0.00320 (22%) | DB: 0.00036 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 15:18:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000687)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01385 (72 reqs/sec) | Rendering: 0.00445 (32%) | DB: 0.00069 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 15:18:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001152)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02185 (45 reqs/sec) | Rendering: 0.00684 (31%) | DB: 0.00115 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 15:18:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000378)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01805 (55 reqs/sec) | Rendering: 0.00321 (17%) | DB: 0.00038 (2%) | 200 OK [http://localhost/build_plans/1]
+  [4;36;1mBuildPlan Load (0.000414)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Load (0.000372)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Load (0.000369)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Load (0.000367)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Load (0.000366)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Load (0.000371)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Load (0.000465)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 20:51:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000373)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.03252 (30 reqs/sec) | Rendering: 0.00565 (17%) | DB: 0.00037 (1%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 20:53:21) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"blah", "url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000654)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;35;1mBuildPlan Update (0.000920)[0m   [0mUPDATE "build_plans" SET "url" = 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF', "updated_at" = '2008-08-24 10:53:21' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.04463 (22 reqs/sec) | DB: 0.00157 (3%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 20:53:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000360)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01609 (62 reqs/sec) | Rendering: 0.00249 (15%) | DB: 0.00036 (2%) | 200 OK [http://localhost/build_plans/1]
+  [4;36;1mSQL (0.000947)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000401)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateBuildPlans (20080820095608)
+  [4;35;1mSQL (0.000295)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddStatusToBuildPlans (20080823123629)
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to RenameUrlToRssUrl (20080824105539)
+  [4;35;1mSQL (0.049647)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000970)[0m   [0mCREATE TEMPORARY TABLE "altered_build_plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "rss_url" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "status" varchar(255) DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.000078)[0m   [0;1mPRAGMA index_list("build_plans")[0m
+  [4;35;1mSQL (0.000323)[0m   [0mDROP TABLE "build_plans"[0m
+  [4;36;1mSQL (0.000354)[0m   [0;1mCREATE TABLE "build_plans" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "rss_url" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL, "status" varchar(255) DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000077)[0m   [0mPRAGMA index_list("altered_build_plans")[0m
+  [4;36;1mSQL (0.000179)[0m   [0;1mDROP TABLE "altered_build_plans"[0m
+  [4;35;1mSQL (0.004768)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080824105539')[0m
+  [4;36;1mSQL (0.000516)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000319)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000095)[0m   [0;1mPRAGMA index_list("build_plans")[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:04:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001061)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03363 (29 reqs/sec) | Rendering: 0.00924 (27%) | DB: 0.00106 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 21:04:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001033)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.03375 (29 reqs/sec) | Rendering: 0.01042 (30%) | DB: 0.00103 (3%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 21:04:31) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"blah", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000778)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.03307 (30 reqs/sec) | DB: 0.00078 (2%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 21:04:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000371)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+
+
+ActionView::TemplateError (undefined method `url' for #<BuildPlan:0xb65bb5ec>) on line #8 of build_plans/show.html.erb:
+5: 
+6: <p>
+7:   <b>Url:</b>
+8:   <%=h @build_plan.url %>
+9: </p>
+10: 
+11: <p>
+
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    app/views/build_plans/show.html.erb:8:in `_run_erb_47app47views47build_plans47show46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/build_plans_controller.rb:18:in `show'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 21:08:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000394)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01761 (56 reqs/sec) | Rendering: 0.00328 (18%) | DB: 0.00039 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:08:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001208)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03138 (31 reqs/sec) | Rendering: 0.00784 (24%) | DB: 0.00121 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 21:09:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000375)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.01902 (52 reqs/sec) | Rendering: 0.00448 (23%) | DB: 0.00037 (1%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 21:09:02) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"blah", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000679)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.03000 (33 reqs/sec) | DB: 0.00068 (2%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 21:09:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000479)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01847 (54 reqs/sec) | Rendering: 0.00283 (15%) | DB: 0.00048 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:09:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001176)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03258 (30 reqs/sec) | Rendering: 0.00789 (24%) | DB: 0.00118 (3%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Load (0.000488)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+
+
+Processing BuildPlansController#new (for 127.0.0.1 at 2008-08-24 21:10:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"new", "controller"=>"build_plans"}
+
+
+ArgumentError (wrong number of arguments (0 for 1)):
+    /app/controllers/build_plans_controller.rb:27:in `initialize'
+    /app/controllers/build_plans_controller.rb:27:in `new'
+    /app/controllers/build_plans_controller.rb:27:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing BuildPlansController#new (for 127.0.0.1 at 2008-08-24 21:11:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"new", "controller"=>"build_plans"}
+Rendering template within layouts/build_plans
+Rendering build_plans/new
+
+
+ActionView::TemplateError (undefined method `url' for #<BuildPlan:0xb69b2ab0>) on line #12 of build_plans/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :rss_url %><br />
+12:     <%= f.text_field :url %>
+13:   </p>
+14:   <p>
+15:     <%= f.submit "Create" %>
+
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/attribute_methods.rb:256:in `method_missing'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:624:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:624:in `value_before_type_cast'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:612:in `value_before_type_cast'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:535:in `to_input_field_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:358:in `text_field'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:709:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:709:in `text_field'
+    app/views/build_plans/new.html.erb:12:in `_run_erb_47app47views47build_plans47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:317:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/build_plans/new.html.erb:3:in `_run_erb_47app47views47build_plans47new46html46erb'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/build_plans_controller.rb:29:in `new'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /var/lib/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing BuildPlansController#new (for 127.0.0.1 at 2008-08-24 21:12:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"new", "controller"=>"build_plans"}
+Rendering template within layouts/build_plans
+Rendering build_plans/new
+Completed in 0.01902 (52 reqs/sec) | Rendering: 0.00515 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/build_plans/new]
+
+
+Processing BuildPlansController#create (for 127.0.0.1 at 2008-08-24 21:12:34) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Create", "build_plan"=>{"name"=>"ATLAS-DEF", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=ATLAS-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "action"=>"create", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Create (0.000749)[0m   [0;1mINSERT INTO "build_plans" ("name", "status", "updated_at", "rss_url", "created_at") VALUES('ATLAS-DEF', 'unknown', '2008-08-24 11:12:34', 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=ATLAS-DEF', '2008-08-24 11:12:34')[0m
+Redirected to http://localhost:3000/build_plans/2
+Completed in 0.02977 (33 reqs/sec) | DB: 0.00075 (2%) | 302 Found [http://localhost/build_plans]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 21:12:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSBjcmVh
+dGVkLgY6CkB1c2VkewY7B0Y=--98fc383224484382219072a0b22acc2751166e93
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000725)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 2) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.03141 (31 reqs/sec) | Rendering: 0.00401 (12%) | DB: 0.00073 (2%) | 200 OK [http://localhost/build_plans/2]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:12:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSBjcmVh
+dGVkLgY6CkB1c2VkewY7B1Q=--17d92552404c7a00af8e4cef7e758289aba51600
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000846)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02009 (49 reqs/sec) | Rendering: 0.00709 (35%) | DB: 0.00085 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 21:12:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000844)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.03228 (30 reqs/sec) | Rendering: 0.00781 (24%) | DB: 0.00084 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 21:12:44) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"LPONLINE-DEF", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000450)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;35;1mBuildPlan Update (0.000332)[0m   [0mUPDATE "build_plans" SET "name" = 'LPONLINE-DEF', "updated_at" = '2008-08-24 11:12:44' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.03519 (28 reqs/sec) | DB: 0.00078 (2%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 21:12:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000669)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01716 (58 reqs/sec) | Rendering: 0.00297 (17%) | DB: 0.00067 (3%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:12:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000865)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01892 (52 reqs/sec) | Rendering: 0.00584 (30%) | DB: 0.00086 (4%) | 200 OK [http://localhost/build_plans]
+  [4;35;1mBuildPlan Load (0.000499)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 2) [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:13:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000981)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03121 (32 reqs/sec) | Rendering: 0.00469 (15%) | DB: 0.00098 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:13:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001795)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03016 (33 reqs/sec) | Rendering: 0.00814 (26%) | DB: 0.00180 (5%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Update (0.000906)[0m   [0;1mUPDATE "build_plans" SET "status" = 'red', "updated_at" = '2008-08-24 11:13:23' WHERE "id" = 2[0m
+  [4;35;1mBuildPlan Load (0.000845)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Update (0.000486)[0m   [0;1mUPDATE "build_plans" SET "status" = 'green', "updated_at" = '2008-08-24 11:13:33' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:13:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001171)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02002 (49 reqs/sec) | Rendering: 0.00499 (24%) | DB: 0.00117 (5%) | 200 OK [http://localhost/build_plans]
+  [4;35;1mSQL (0.000769)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mBuildPlan Update (0.000476)[0m   [0;1mUPDATE "build_plans" SET "status" = 'unknown', "updated_at" = '2008-08-24 11:17:07' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:17:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001430)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03025 (33 reqs/sec) | Rendering: 0.00819 (27%) | DB: 0.00143 (4%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Load (0.001976)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.000715)[0m   [0mUPDATE "build_plans" SET "status" = 'green', "updated_at" = '2008-08-24 11:17:27' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:17:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001406)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03314 (30 reqs/sec) | Rendering: 0.00929 (28%) | DB: 0.00141 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:24:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00495 (202 reqs/sec) | Rendering: 0.00173 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:33:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001134)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02232 (44 reqs/sec) | Rendering: 0.00090 (4%) | DB: 0.00113 (5%) | 406 Not Acceptable [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:34:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001486)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.17189 (5 reqs/sec) | Rendering: 0.14983 (87%) | DB: 0.00149 (0%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:39:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00827 (120 reqs/sec) | Rendering: 0.00304 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:40:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00651 (153 reqs/sec) | Rendering: 0.00110 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:40:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00645 (155 reqs/sec) | Rendering: 0.00121 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:41:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00687 (145 reqs/sec) | Rendering: 0.00162 (23%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 21:42:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000411)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01848 (54 reqs/sec) | Rendering: 0.00257 (13%) | DB: 0.00041 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 21:42:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000372)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.02091 (47 reqs/sec) | Rendering: 0.00413 (19%) | DB: 0.00037 (1%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:43:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00816 (122 reqs/sec) | Rendering: 0.00291 (35%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:43:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00624 (160 reqs/sec) | Rendering: 0.00106 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:43:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00581 (172 reqs/sec) | Rendering: 0.00200 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:43:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00636 (157 reqs/sec) | Rendering: 0.00108 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:43:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00853 (117 reqs/sec) | Rendering: 0.00314 (36%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:44:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00487 (205 reqs/sec) | Rendering: 0.00181 (37%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:44:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00971 (102 reqs/sec) | Rendering: 0.00367 (37%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:45:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00818 (122 reqs/sec) | Rendering: 0.00232 (28%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:46:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00641 (155 reqs/sec) | Rendering: 0.00110 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:46:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00485 (206 reqs/sec) | Rendering: 0.00143 (29%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:46:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00407 (245 reqs/sec) | Rendering: 0.00081 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:46:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00715 (139 reqs/sec) | Rendering: 0.00151 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:47:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00631 (158 reqs/sec) | Rendering: 0.00114 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:47:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00375 (266 reqs/sec) | Rendering: 0.00071 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:47:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00072 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:47:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00690 (144 reqs/sec) | Rendering: 0.00130 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:47:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001455)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02918 (34 reqs/sec) | Rendering: 0.00758 (25%) | DB: 0.00146 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:48:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00652 (153 reqs/sec) | Rendering: 0.00127 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:48:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001155)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01913 (52 reqs/sec) | Rendering: 0.00400 (20%) | DB: 0.00115 (6%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:49:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00632 (158 reqs/sec) | Rendering: 0.00113 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:50:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001856)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.12743 (7 reqs/sec) | Rendering: 0.00778 (6%) | DB: 0.00186 (1%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:50:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00495 (202 reqs/sec) | Rendering: 0.00141 (28%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:50:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00711 (140 reqs/sec) | Rendering: 0.00184 (25%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:50:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001825)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02972 (33 reqs/sec) | Rendering: 0.00582 (19%) | DB: 0.00182 (6%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:50:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00680 (147 reqs/sec) | Rendering: 0.00133 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:50:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000869)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02889 (34 reqs/sec) | Rendering: 0.00433 (15%) | DB: 0.00087 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 21:51:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00677 (147 reqs/sec) | Rendering: 0.00118 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:51:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000894)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.11320 (8 reqs/sec) | Rendering: 0.00469 (4%) | DB: 0.00089 (0%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 21:59:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000852)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02280 (43 reqs/sec) | Rendering: 0.00416 (18%) | DB: 0.00085 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:01:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00632 (158 reqs/sec) | Rendering: 0.00108 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:01:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000867)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02606 (38 reqs/sec) | Rendering: 0.00498 (19%) | DB: 0.00087 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:02:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00378 (264 reqs/sec) | Rendering: 0.00069 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:02:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000914)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01796 (55 reqs/sec) | Rendering: 0.00414 (23%) | DB: 0.00091 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:03:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00652 (153 reqs/sec) | Rendering: 0.00109 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:03:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000888)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01847 (54 reqs/sec) | Rendering: 0.00434 (23%) | DB: 0.00089 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:04:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00379 (263 reqs/sec) | Rendering: 0.00070 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:04:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00442 (226 reqs/sec) | Rendering: 0.00075 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:04:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00766 (130 reqs/sec) | Rendering: 0.00136 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:04:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000927)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02176 (45 reqs/sec) | Rendering: 0.00458 (21%) | DB: 0.00093 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:16:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00918 (108 reqs/sec) | Rendering: 0.00371 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:16:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001424)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03749 (26 reqs/sec) | Rendering: 0.01560 (41%) | DB: 0.00142 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:16:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000940)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02070 (48 reqs/sec) | Rendering: 0.00526 (25%) | DB: 0.00094 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:18:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00666 (150 reqs/sec) | Rendering: 0.00113 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:18:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001497)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03022 (33 reqs/sec) | Rendering: 0.00791 (26%) | DB: 0.00150 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:19:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00626 (159 reqs/sec) | Rendering: 0.00106 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:19:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001427)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02848 (35 reqs/sec) | Rendering: 0.00714 (25%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:19:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001085)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02774 (36 reqs/sec) | Rendering: 0.00501 (18%) | DB: 0.00108 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:19:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.002304)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.13221 (7 reqs/sec) | Rendering: 0.10262 (77%) | DB: 0.00230 (1%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#new (for 127.0.0.1 at 2008-08-24 22:20:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"new", "controller"=>"build_plans"}
+Rendering template within layouts/build_plans
+Rendering build_plans/new
+Completed in 0.01953 (51 reqs/sec) | Rendering: 0.00284 (14%) | DB: 0.00000 (0%) | 200 OK [http://localhost/build_plans/new]
+
+
+Processing BuildPlansController#create (for 127.0.0.1 at 2008-08-24 22:20:17) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Create", "build_plan"=>{"name"=>"ANOTHER_PROJ", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=BKSNDF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "action"=>"create", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Create (0.000649)[0m   [0;1mINSERT INTO "build_plans" ("name", "status", "updated_at", "rss_url", "created_at") VALUES('ANOTHER_PROJ', 'unknown', '2008-08-24 12:20:17', 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=BKSNDF', '2008-08-24 12:20:17')[0m
+Redirected to http://localhost:3000/build_plans/3
+Completed in 0.04353 (22 reqs/sec) | DB: 0.00065 (1%) | 302 Found [http://localhost/build_plans]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 22:20:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSBjcmVh
+dGVkLgY6CkB1c2VkewY7B0Y=--98fc383224484382219072a0b22acc2751166e93
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000741)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 3) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.02976 (33 reqs/sec) | Rendering: 0.00423 (14%) | DB: 0.00074 (2%) | 200 OK [http://localhost/build_plans/3]
+  [4;36;1mBuildPlan Load (0.001340)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:20:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSBjcmVh
+dGVkLgY6CkB1c2VkewY7B1Q=--17d92552404c7a00af8e4cef7e758289aba51600
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001007)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02306 (43 reqs/sec) | Rendering: 0.00497 (21%) | DB: 0.00101 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:20:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001164)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02338 (42 reqs/sec) | Rendering: 0.00584 (24%) | DB: 0.00116 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:23:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00652 (153 reqs/sec) | Rendering: 0.00115 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:23:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001005)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01739 (57 reqs/sec) | Rendering: 0.00467 (26%) | DB: 0.00100 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:23:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001031)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02189 (45 reqs/sec) | Rendering: 0.00736 (33%) | DB: 0.00103 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:24:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00387 (258 reqs/sec) | Rendering: 0.00070 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:24:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001791)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03434 (29 reqs/sec) | Rendering: 0.01318 (38%) | DB: 0.00179 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:24:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00622 (160 reqs/sec) | Rendering: 0.00107 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:26:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00404 (247 reqs/sec) | Rendering: 0.00086 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:26:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.003609)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.11218 (8 reqs/sec) | Rendering: 0.08421 (75%) | DB: 0.00361 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:26:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00672 (148 reqs/sec) | Rendering: 0.00132 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:26:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001748)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03620 (27 reqs/sec) | Rendering: 0.01219 (33%) | DB: 0.00175 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:27:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00620 (161 reqs/sec) | Rendering: 0.00096 (15%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:27:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001983)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.04144 (24 reqs/sec) | Rendering: 0.00563 (13%) | DB: 0.00198 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:27:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001045)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01842 (54 reqs/sec) | Rendering: 0.00482 (26%) | DB: 0.00104 (5%) | 200 OK [http://localhost/build_plans]
+  [4;35;1mBuildPlan Load (0.001292)[0m   [0mSELECT * FROM "build_plans" [0m
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:27:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00661 (151 reqs/sec) | Rendering: 0.00125 (18%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:27:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001043)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01913 (52 reqs/sec) | Rendering: 0.00482 (25%) | DB: 0.00104 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:28:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00751 (133 reqs/sec) | Rendering: 0.00175 (23%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:28:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001754)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03362 (29 reqs/sec) | Rendering: 0.00917 (27%) | DB: 0.00175 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:28:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001042)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02508 (39 reqs/sec) | Rendering: 0.00517 (20%) | DB: 0.00104 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:28:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001116)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01918 (52 reqs/sec) | Rendering: 0.00532 (27%) | DB: 0.00112 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#destroy (for 127.0.0.1 at 2008-08-24 22:28:50) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"delete", "action"=>"destroy", "id"=>"3", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000775)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 3) [0m
+  [4;36;1mBuildPlan Destroy (0.000301)[0m   [0;1m DELETE FROM "build_plans"
+ WHERE "id" = 3
+[0m
+Redirected to http://localhost:3000/build_plans
+Completed in 0.05090 (19 reqs/sec) | DB: 0.00108 (2%) | 302 Found [http://localhost/build_plans/3]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:28:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000862)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.01708 (58 reqs/sec) | Rendering: 0.00467 (27%) | DB: 0.00086 (5%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:28:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000891)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01980 (50 reqs/sec) | Rendering: 0.00440 (22%) | DB: 0.00089 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:31:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.01048 (95 reqs/sec) | Rendering: 0.00330 (31%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:31:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00675 (148 reqs/sec) | Rendering: 0.00131 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:31:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001819)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02713 (36 reqs/sec) | Rendering: 0.00447 (16%) | DB: 0.00182 (6%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:31:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000831)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02132 (46 reqs/sec) | Rendering: 0.00429 (20%) | DB: 0.00083 (3%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 22:31:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000759)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.03439 (29 reqs/sec) | Rendering: 0.00882 (25%) | DB: 0.00076 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 22:31:57) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"LPONLINE-DEF", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DE"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000699)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;35;1mBuildPlan Update (0.000376)[0m   [0mUPDATE "build_plans" SET "rss_url" = 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DE', "updated_at" = '2008-08-24 12:31:57' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.02718 (36 reqs/sec) | DB: 0.00107 (3%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 22:31:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000381)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01909 (52 reqs/sec) | Rendering: 0.00229 (11%) | DB: 0.00038 (1%) | 200 OK [http://localhost/build_plans/1]
+  [4;36;1mBuildPlan Load (0.001113)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.000491)[0m   [0mUPDATE "build_plans" SET "status" = 'unknown', "updated_at" = '2008-08-24 12:32:02' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:32:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001425)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.02948 (33 reqs/sec) | Rendering: 0.00799 (27%) | DB: 0.00143 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:32:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000865)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01779 (56 reqs/sec) | Rendering: 0.00496 (27%) | DB: 0.00086 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 22:32:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000762)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.03209 (31 reqs/sec) | Rendering: 0.00700 (21%) | DB: 0.00076 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 22:32:26) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"LPONLINE-DEF", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000374)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;35;1mBuildPlan Update (0.000400)[0m   [0mUPDATE "build_plans" SET "rss_url" = 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF', "updated_at" = '2008-08-24 12:32:26' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.03330 (30 reqs/sec) | DB: 0.00077 (2%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 22:32:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000427)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01875 (53 reqs/sec) | Rendering: 0.00238 (12%) | DB: 0.00043 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:32:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000853)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02096 (47 reqs/sec) | Rendering: 0.00519 (24%) | DB: 0.00085 (4%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Load (0.001033)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.000314)[0m   [0mUPDATE "build_plans" SET "status" = 'green', "updated_at" = '2008-08-24 12:32:37' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:32:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001244)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02037 (49 reqs/sec) | Rendering: 0.00565 (27%) | DB: 0.00124 (6%) | 200 OK [http://localhost/build_plans]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:33:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"html", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001547)[0m   [0mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03066 (32 reqs/sec) | Rendering: 0.00833 (27%) | DB: 0.00155 (5%) | 200 OK [http://localhost/build_plans.html]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:34:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001468)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03660 (27 reqs/sec) | Rendering: 0.00920 (25%) | DB: 0.00147 (4%) | 200 OK [http://localhost/build_plans]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:34:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00722 (138 reqs/sec) | Rendering: 0.00137 (19%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:34:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00844 (118 reqs/sec) | Rendering: 0.00323 (38%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:34:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001230)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01724 (58 reqs/sec) | Rendering: 0.00419 (24%) | DB: 0.00123 (7%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:34:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000874)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01662 (60 reqs/sec) | Rendering: 0.00453 (27%) | DB: 0.00087 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001438)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02838 (35 reqs/sec) | Rendering: 0.00731 (25%) | DB: 0.00144 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000834)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01596 (62 reqs/sec) | Rendering: 0.00395 (24%) | DB: 0.00083 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000877)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01750 (57 reqs/sec) | Rendering: 0.00476 (27%) | DB: 0.00088 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001456)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02835 (35 reqs/sec) | Rendering: 0.00712 (25%) | DB: 0.00146 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000859)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01702 (58 reqs/sec) | Rendering: 0.00445 (26%) | DB: 0.00086 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000846)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01969 (50 reqs/sec) | Rendering: 0.00416 (21%) | DB: 0.00085 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000849)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01588 (62 reqs/sec) | Rendering: 0.00414 (26%) | DB: 0.00085 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000830)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01675 (59 reqs/sec) | Rendering: 0.00410 (24%) | DB: 0.00083 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:35:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001410)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02969 (33 reqs/sec) | Rendering: 0.00843 (28%) | DB: 0.00141 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:36:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000859)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01606 (62 reqs/sec) | Rendering: 0.00413 (25%) | DB: 0.00086 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:36:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000894)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01660 (60 reqs/sec) | Rendering: 0.00420 (25%) | DB: 0.00089 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:36:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001488)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03155 (31 reqs/sec) | Rendering: 0.00935 (29%) | DB: 0.00149 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:36:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001434)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02861 (34 reqs/sec) | Rendering: 0.00725 (25%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:36:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.002132)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03046 (32 reqs/sec) | Rendering: 0.00737 (24%) | DB: 0.00213 (6%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001433)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02922 (34 reqs/sec) | Rendering: 0.00766 (26%) | DB: 0.00143 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000833)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02327 (42 reqs/sec) | Rendering: 0.00434 (18%) | DB: 0.00083 (3%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000904)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01963 (50 reqs/sec) | Rendering: 0.00467 (23%) | DB: 0.00090 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000913)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02529 (39 reqs/sec) | Rendering: 0.00456 (18%) | DB: 0.00091 (3%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001499)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03023 (33 reqs/sec) | Rendering: 0.00722 (23%) | DB: 0.00150 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001422)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02922 (34 reqs/sec) | Rendering: 0.00713 (24%) | DB: 0.00142 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:37:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001499)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02853 (35 reqs/sec) | Rendering: 0.00728 (25%) | DB: 0.00150 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:38:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000843)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01689 (59 reqs/sec) | Rendering: 0.00442 (26%) | DB: 0.00084 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:38:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000862)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01746 (57 reqs/sec) | Rendering: 0.00428 (24%) | DB: 0.00086 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:38:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001501)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02999 (33 reqs/sec) | Rendering: 0.00744 (24%) | DB: 0.00150 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:38:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001455)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02837 (35 reqs/sec) | Rendering: 0.00716 (25%) | DB: 0.00146 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:38:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000906)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01583 (63 reqs/sec) | Rendering: 0.00412 (26%) | DB: 0.00091 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:38:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001977)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03649 (27 reqs/sec) | Rendering: 0.01119 (30%) | DB: 0.00198 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000995)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01723 (58 reqs/sec) | Rendering: 0.00403 (23%) | DB: 0.00100 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000885)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.12262 (8 reqs/sec) | Rendering: 0.00441 (3%) | DB: 0.00089 (0%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001433)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03045 (32 reqs/sec) | Rendering: 0.00790 (25%) | DB: 0.00143 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000869)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02008 (49 reqs/sec) | Rendering: 0.00748 (37%) | DB: 0.00087 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000848)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01681 (59 reqs/sec) | Rendering: 0.00403 (23%) | DB: 0.00085 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000830)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01603 (62 reqs/sec) | Rendering: 0.00406 (25%) | DB: 0.00083 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001438)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02863 (34 reqs/sec) | Rendering: 0.00774 (27%) | DB: 0.00144 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000850)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.09732 (10 reqs/sec) | Rendering: 0.08119 (83%) | DB: 0.00085 (0%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:39:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000865)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02233 (44 reqs/sec) | Rendering: 0.00425 (19%) | DB: 0.00087 (3%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001882)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02721 (36 reqs/sec) | Rendering: 0.00515 (18%) | DB: 0.00188 (6%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001420)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03384 (29 reqs/sec) | Rendering: 0.00807 (23%) | DB: 0.00142 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001444)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03021 (33 reqs/sec) | Rendering: 0.00735 (24%) | DB: 0.00144 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.002327)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02675 (37 reqs/sec) | Rendering: 0.00482 (18%) | DB: 0.00233 (8%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001410)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02868 (34 reqs/sec) | Rendering: 0.00737 (25%) | DB: 0.00141 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000949)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01692 (59 reqs/sec) | Rendering: 0.00424 (25%) | DB: 0.00095 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001427)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02757 (36 reqs/sec) | Rendering: 0.00740 (26%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:40:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001766)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03267 (30 reqs/sec) | Rendering: 0.00843 (25%) | DB: 0.00177 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001072)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02092 (47 reqs/sec) | Rendering: 0.00548 (26%) | DB: 0.00107 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000876)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01585 (63 reqs/sec) | Rendering: 0.00399 (25%) | DB: 0.00088 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001451)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02777 (36 reqs/sec) | Rendering: 0.00709 (25%) | DB: 0.00145 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001764)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01783 (56 reqs/sec) | Rendering: 0.00430 (24%) | DB: 0.00176 (9%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001036)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03294 (30 reqs/sec) | Rendering: 0.01886 (57%) | DB: 0.00104 (3%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001142)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001504)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02851 (35 reqs/sec) | Rendering: 0.00718 (25%) | DB: 0.00150 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001431)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02771 (36 reqs/sec) | Rendering: 0.00698 (25%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001548)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02907 (34 reqs/sec) | Rendering: 0.00727 (24%) | DB: 0.00155 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001463)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02844 (35 reqs/sec) | Rendering: 0.00743 (26%) | DB: 0.00146 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001128)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01877 (53 reqs/sec) | Rendering: 0.00538 (28%) | DB: 0.00113 (6%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:41:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.002855)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03114 (32 reqs/sec) | Rendering: 0.00606 (19%) | DB: 0.00286 (9%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001442)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02813 (35 reqs/sec) | Rendering: 0.00722 (25%) | DB: 0.00144 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001426)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02821 (35 reqs/sec) | Rendering: 0.00708 (25%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001400)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02882 (34 reqs/sec) | Rendering: 0.00763 (26%) | DB: 0.00140 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001403)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02999 (33 reqs/sec) | Rendering: 0.00723 (24%) | DB: 0.00140 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000899)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01725 (57 reqs/sec) | Rendering: 0.00427 (24%) | DB: 0.00090 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000851)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01709 (58 reqs/sec) | Rendering: 0.00414 (24%) | DB: 0.00085 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000846)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01615 (61 reqs/sec) | Rendering: 0.00427 (26%) | DB: 0.00085 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000843)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01777 (56 reqs/sec) | Rendering: 0.00418 (23%) | DB: 0.00084 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000849)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01644 (60 reqs/sec) | Rendering: 0.00420 (25%) | DB: 0.00085 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001153)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000959)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01799 (55 reqs/sec) | Rendering: 0.00453 (25%) | DB: 0.00096 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000867)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01722 (58 reqs/sec) | Rendering: 0.00429 (24%) | DB: 0.00087 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:42:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000875)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02032 (49 reqs/sec) | Rendering: 0.00409 (20%) | DB: 0.00087 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000883)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02434 (41 reqs/sec) | Rendering: 0.00414 (17%) | DB: 0.00088 (3%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000835)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01568 (63 reqs/sec) | Rendering: 0.00398 (25%) | DB: 0.00083 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001412)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02835 (35 reqs/sec) | Rendering: 0.00709 (25%) | DB: 0.00141 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001432)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02805 (35 reqs/sec) | Rendering: 0.00715 (25%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001056)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02217 (45 reqs/sec) | Rendering: 0.00608 (27%) | DB: 0.00106 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001160)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000959)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02486 (40 reqs/sec) | Rendering: 0.00452 (18%) | DB: 0.00096 (3%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000878)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03140 (31 reqs/sec) | Rendering: 0.01487 (47%) | DB: 0.00088 (2%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001207)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001458)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02846 (35 reqs/sec) | Rendering: 0.00704 (24%) | DB: 0.00146 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.002977)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03523 (28 reqs/sec) | Rendering: 0.00433 (12%) | DB: 0.00298 (8%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001207)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001431)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03103 (32 reqs/sec) | Rendering: 0.00767 (24%) | DB: 0.00143 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001184)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:43:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000858)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01774 (56 reqs/sec) | Rendering: 0.00455 (25%) | DB: 0.00086 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001209)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 22:44:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000535)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.02150 (46 reqs/sec) | Rendering: 0.00547 (25%) | DB: 0.00054 (2%) | 200 OK [http://localhost/build_plans/1/edit]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000933)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01977 (50 reqs/sec) | Rendering: 0.00418 (21%) | DB: 0.00093 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 22:44:09) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"LPONLINE-DEF", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DE"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000429)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;36;1mBuildPlan Update (0.000528)[0m   [0;1mUPDATE "build_plans" SET "rss_url" = 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DE', "updated_at" = '2008-08-24 12:44:09' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.03241 (30 reqs/sec) | DB: 0.00096 (2%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 22:44:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000676)[0m   [0mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.02687 (37 reqs/sec) | Rendering: 0.00387 (14%) | DB: 0.00068 (2%) | 200 OK [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000968)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/index
+Completed in 0.03717 (26 reqs/sec) | Rendering: 0.01588 (42%) | DB: 0.00097 (2%) | 200 OK [http://localhost/build_plans]
+  [4;36;1mBuildPlan Load (0.001230)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.000742)[0m   [0mUPDATE "build_plans" SET "status" = 'unknown', "updated_at" = '2008-08-24 12:44:14' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000893)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01860 (53 reqs/sec) | Rendering: 0.00446 (23%) | DB: 0.00089 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#edit (for 127.0.0.1 at 2008-08-24 22:44:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000419)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/edit
+Completed in 0.04099 (24 reqs/sec) | Rendering: 0.02532 (61%) | DB: 0.00042 (1%) | 200 OK [http://localhost/build_plans/1/edit]
+  [4;36;1mBuildPlan Load (0.001220)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001538)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01945 (51 reqs/sec) | Rendering: 0.00469 (24%) | DB: 0.00154 (7%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#update (for 127.0.0.1 at 2008-08-24 22:44:27) [PUT]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"commit"=>"Update", "build_plan"=>{"name"=>"LPONLINE-DEF", "rss_url"=>"http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF"}, "authenticity_token"=>"9004cd1a1c5fe3e9c21196126a3a414c8bcdb9d0", "_method"=>"put", "action"=>"update", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000393)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+  [4;35;1mBuildPlan Update (0.000297)[0m   [0mUPDATE "build_plans" SET "rss_url" = 'http://lpdev:8085/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=LPONLINE-DEF', "updated_at" = '2008-08-24 12:44:27' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/build_plans/1
+Completed in 0.03304 (30 reqs/sec) | DB: 0.00069 (2%) | 302 Found [http://localhost/build_plans/1]
+
+
+Processing BuildPlansController#show (for 127.0.0.1 at 2008-08-24 22:44:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B0Y=--a16578b94e554a583f8579dd60cb5992c8a5e32d
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000753)[0m   [0;1mSELECT * FROM "build_plans" WHERE ("build_plans"."id" = 1) [0m
+Rendering template within layouts/build_plans
+Rendering build_plans/show
+Completed in 0.01853 (53 reqs/sec) | Rendering: 0.00258 (13%) | DB: 0.00075 (4%) | 200 OK [http://localhost/build_plans/1]
+  [4;36;1mBuildPlan Load (0.001184)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.000940)[0m   [0mUPDATE "build_plans" SET "status" = 'green', "updated_at" = '2008-08-24 12:44:33' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIihCdWlsZFBsYW4gd2FzIHN1Y2Nlc3NmdWxseSB1cGRh
+dGVkLgY6CkB1c2VkewY7B1Q=--7d97533d6a523f152f65674236abcf6dfc061c3a
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000852)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01772 (56 reqs/sec) | Rendering: 0.00468 (26%) | DB: 0.00085 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001411)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02532 (39 reqs/sec) | Rendering: 0.00678 (26%) | DB: 0.00141 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001211)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001505)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02942 (33 reqs/sec) | Rendering: 0.00737 (25%) | DB: 0.00150 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000942)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02763 (36 reqs/sec) | Rendering: 0.00530 (19%) | DB: 0.00094 (3%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001371)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:44:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001653)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02830 (35 reqs/sec) | Rendering: 0.00709 (25%) | DB: 0.00165 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001336)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000858)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01580 (63 reqs/sec) | Rendering: 0.00407 (25%) | DB: 0.00086 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001305)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.000851)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.01554 (64 reqs/sec) | Rendering: 0.00395 (25%) | DB: 0.00085 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001184)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000878)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01789 (55 reqs/sec) | Rendering: 0.00436 (24%) | DB: 0.00088 (4%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001446)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02959 (33 reqs/sec) | Rendering: 0.00759 (25%) | DB: 0.00145 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001162)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001445)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02866 (34 reqs/sec) | Rendering: 0.00764 (26%) | DB: 0.00144 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001453)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02845 (35 reqs/sec) | Rendering: 0.00714 (25%) | DB: 0.00145 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001143)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001430)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02760 (36 reqs/sec) | Rendering: 0.00705 (25%) | DB: 0.00143 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001422)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03157 (31 reqs/sec) | Rendering: 0.00817 (25%) | DB: 0.00142 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001265)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000939)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01785 (56 reqs/sec) | Rendering: 0.00432 (24%) | DB: 0.00094 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:45:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001664)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02776 (36 reqs/sec) | Rendering: 0.00547 (19%) | DB: 0.00166 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000986)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01919 (52 reqs/sec) | Rendering: 0.00444 (23%) | DB: 0.00099 (5%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001160)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001446)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.02834 (35 reqs/sec) | Rendering: 0.00738 (26%) | DB: 0.00145 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000862)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02410 (41 reqs/sec) | Rendering: 0.01213 (50%) | DB: 0.00086 (3%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001173)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001916)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03695 (27 reqs/sec) | Rendering: 0.00778 (21%) | DB: 0.00192 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing RadiatorController#index (for 127.0.0.1 at 2008-08-24 22:46:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"action"=>"index", "controller"=>"radiator"}
+Rendering radiator/index
+Completed in 0.00700 (142 reqs/sec) | Rendering: 0.00150 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/radiator]
+  [4;36;1mBuildPlan Load (0.001475)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001534)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03092 (32 reqs/sec) | Rendering: 0.00864 (27%) | DB: 0.00153 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001347)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001556)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03361 (29 reqs/sec) | Rendering: 0.01008 (29%) | DB: 0.00156 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001471)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.000853)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.01649 (60 reqs/sec) | Rendering: 0.00421 (25%) | DB: 0.00085 (5%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.001497)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.03008 (33 reqs/sec) | Rendering: 0.00718 (23%) | DB: 0.00150 (4%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001269)[0m   [0;1mSELECT * FROM "build_plans" [0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:46:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001842)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.03003 (33 reqs/sec) | Rendering: 0.00844 (28%) | DB: 0.00184 (6%) | 200 OK [http://localhost/build_plans.json]
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:47:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;35;1mBuildPlan Load (0.018293)[0m   [0mSELECT * FROM "build_plans" [0m
+Completed in 0.12000 (8 reqs/sec) | Rendering: 0.00550 (4%) | DB: 0.01829 (15%) | 200 OK [http://localhost/build_plans.json]
+  [4;36;1mBuildPlan Load (0.001289)[0m   [0;1mSELECT * FROM "build_plans" [0m
+  [4;35;1mBuildPlan Update (0.001000)[0m   [0mUPDATE "build_plans" SET "status" = 'unknown', "updated_at" = '2008-08-24 12:47:04' WHERE "id" = 1[0m
+
+
+Processing BuildPlansController#index (for 127.0.0.1 at 2008-08-24 22:47:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYzRmNjk0YzE3ZTZhMzMxMmQwYWE2Njk3YTU2YzI5
+ZTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b0a7a94a7e8f4704cb52aaa9bf002f1a54b57715
+  Parameters: {"format"=>"json", "action"=>"index", "controller"=>"build_plans"}
+  [4;36;1mBuildPlan Load (0.001501)[0m   [0;1mSELECT * FROM "build_plans" [0m
+Completed in 0.02952 (33 reqs/sec) | Rendering: 0.00731 (24%) | DB: 0.00150 (5%) | 200 OK [http://localhost/build_plans.json]

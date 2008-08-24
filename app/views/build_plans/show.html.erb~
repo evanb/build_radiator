@@ -4,8 +4,8 @@
 </p>
 
 <p>
-  <b>RSS Url:</b>
-  <%=h @build_plan.rss_url %>
+  <b>Url:</b>
+  <%=h @build_plan.url %>
 </p>
 
 <p>

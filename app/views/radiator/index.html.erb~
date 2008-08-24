@@ -3,39 +3,23 @@
 		<title>Build Radiator</title>
 
 		<script src="http://www.google.com/jsapi"></script>
-
+		<script src="/javascripts/radiator.js"></script>
 		<script>
 			// Load jQuery 
 			google.load("jquery", "1");
-			
-			var urls = new Array(
-			    "http://www.google.com", 
-			    "http://www.lonelyplanet.com"
-			    );
-			var nextUrlIndex = 0;
-			
-            function initialize() {
-                nextUrl();
-			}
-			
-			function nextUrl() {
-    	        showUrl(urls[nextUrlIndex]);
-		        nextUrlIndex++;
-		        if (nextUrlIndex > urls.length) { nextUrlIndex = 0 };
-			    window.setTimeout(function() {
-			        nextUrl();
-			    }, 3000);
-			}
-			
-			function showUrl(url) {
-			    $("#content").attr("src", url);
-			}
-			
-			google.setOnLoadCallback(initialize);
+			google.setOnLoadCallback(initialize_radiator);
 		</script>
+		
+		<link rel="stylesheet" href="/stylesheets/main.css" />
 
 	</head>
 
-	<iframe id="content" />
+    <body>
+        <!--<iframe id="radiator_frame" />-->
+	
+	    <a id="update_build_status" href="#">update build status</a>
+	    
+	    <div id="build_statuses" />
+	</body>
 
 </html>

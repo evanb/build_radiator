@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :rss_url %><br />
-    <%= f.text_field :rss_url %>
+    <%= f.text_field :url %>
   </p>
   <p>
     <%= f.submit "Create" %>

@@ -8,8 +8,8 @@
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :rss_url %><br />
-    <%= f.text_field :rss_url %>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
   </p>
   <p><em>e.g. http://#{HOST_URL}/rss/createAllBuildsRssFeed.action?feedType=rssAll&buildKey=#{project_build_key}</em></p>
   <p>

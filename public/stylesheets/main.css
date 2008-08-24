@@ -2,3 +2,20 @@
     height: 100%;
     width: 100%;
 }
+
+li.buildStatus {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+li.redStatus {
+    color: red;
+}
+
+li.greenStatus {
+    color: green;
+}
+
+li.unknownStatus {
+    color: blue;
+}

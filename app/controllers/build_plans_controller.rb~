@@ -7,7 +7,6 @@ class BuildPlansController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @build_plans }
-      format.json { render :json => @build_plans }
     end
   end
 
