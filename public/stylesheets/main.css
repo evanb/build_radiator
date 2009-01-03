@@ -3,9 +3,23 @@
     width: 100%;
 }
 
+div#build_statuses {
+    padding: 5px;
+    width: 30%;
+}
+
+div.redBodyStatus {
+    background-color: red;
+}
+
+div.greenBodyStatus {
+    background-color: green;
+}
+
 li.buildStatus {
     font-weight: bold;
     font-size: 14pt;
+    background-color: gray;
 }
 
 li.redStatus {
