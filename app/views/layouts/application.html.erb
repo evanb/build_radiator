@@ -15,29 +15,12 @@
 
     <!-- ##### Header ##### -->    
      <div id="header">
-      <div class="superHeader">
-         <% if user_logged_in? %>
-              <span>You are logged in as: </span>
-         <%= current_user.login %>
-         <% else %>
-         <span>Welcome Guest</span>
-         <% end %>
-       </div>
        
           <div class="midHeader">
             <h1 class="headerTitle" lang="la">Page Title Here</h1>
           </div>
 
        <div class="subHeader">
-      <span class="doNotDisplay">Navigation:</span>
-      <% if user_logged_in? %> 
-         <%= link_to 'Logout', logout_url  %> 
-      <% else %>
-       <%= link_to "Signup", signup_url  %>
-       | <%= link_to 'Login', login_url  %>
-       <% end %> 
-      | <%= link_to 'Contact Us', 'contact'  %>
-       </div>
      
         </div>
 

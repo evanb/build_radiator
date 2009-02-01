@@ -1,7 +1,5 @@
 class BuildPlansController < ApplicationController
 
-  before_filter :login_required
-
   # GET /build_plans
   # GET /build_plans.xml
   def index
