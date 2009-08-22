@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  url: MyString
+  rss_url: MyString
 
 two:
   name: MyString
-  url: MyString
+  rss_url: MyString
