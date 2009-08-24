@@ -4,6 +4,8 @@ describe Bamboo do
 
   it "should raise an exception with invalid credentials" do
 
+    pending "can't run without a real bamboo :-("
+
     lambda {
       Bamboo.new.login("foo", "somenunlikelypassword")
     }.should raise_error("authentication failed")
@@ -11,6 +13,9 @@ describe Bamboo do
   end
 
   it "should create a new authenticated session with valid credentials" do
+
+    pending "can't run without a real bamboo :-("
+
 
     bamboo = Bamboo.new
     bamboo.login("evanb", "Pa$$w0rd6")
