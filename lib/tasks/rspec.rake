@@ -54,13 +54,26 @@ end
 task :default => :spec
 task :stats => "spec:statsetup"
 
+spec_opts = ["--colour", "--format", "profile"]
+
 desc "Run all specs in spec directory (excluding plugin specs)"
 Spec::Rake::SpecTask.new(:spec => spec_prereq) do |t|
-  t.spec_opts = ['--options', "\"#{RAILS_ROOT}/spec/spec.opts\""]
+  t.spec_opts = spec_opts
   t.spec_files = FileList['spec/**/*_spec.rb']
 end
 
 namespace :spec do
+
+  report_dir = "target/reports"
+  directory report_dir
+
+  desc "Run all specs in spec directory (excluding plugin specs)"
+  Spec::Rake::SpecTask.new(:all_with_reports => spec_prereq) do |t|
+    t.spec_opts = spec_opts  + ["--format", "html:#{report_dir}/spec.html"]
+    t.spec_files = FileList['spec/**/*_spec.rb']
+  end
+
+
   desc "Run all specs in spec directory with RCov (excluding plugin specs)"
   Spec::Rake::SpecTask.new(:rcov) do |t|
     t.spec_opts = ['--options', "\"#{RAILS_ROOT}/spec/spec.opts\""]
